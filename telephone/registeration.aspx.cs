@@ -11,7 +11,7 @@ namespace telephone
 {
     public partial class registeration : System.Web.UI.Page
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|telephonedirectory.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|result.mdf;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
             if(con.State==ConnectionState.Open)

@@ -19,7 +19,7 @@
 <body>
 <div class="main-menu">
     <header class="header">
-        <a href="add_contact.aspx" class="logo">RMS</a>
+        <a href="add_result.aspx" class="logo">RMS</a>
         <button type="button" class="button-close fa fa-times js__menu_close"></button>
     </header>
     <div class="content" style="margin-top:-100px ">
@@ -27,11 +27,11 @@
             <h5 class="title">Navigation</h5>
             <ul class="menu js__accordion">
                 <li>
-                    <a class="waves-effect" href="add_contact.aspx"><i
+                    <a class="waves-effect" href="add_result.aspx"><i
                             class="menu-icon fa fa-home"></i><span>Add Result</span></a>
                 </li>
                   <li>
-                    <a class="waves-effect" href="mycontact.aspx"><i
+                    <a class="waves-effect" href="myresult.aspx"><i
                             class="menu-icon fa fa-home"></i><span>Results</span></a>
                 </li>
             </ul>

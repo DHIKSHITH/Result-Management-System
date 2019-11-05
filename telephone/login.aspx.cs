@@ -11,7 +11,7 @@ namespace telephone
 {
     public partial class login : System.Web.UI.Page
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|telephonedirectory.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|result.mdf;Integrated Security=True");
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -43,7 +43,7 @@ namespace telephone
             else
             {
                 Session["username"] = username.Text;
-                Response.Redirect("add_contact.aspx");
+                Response.Redirect("add_result.aspx");
             }
         }
     }

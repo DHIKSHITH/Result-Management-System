@@ -11,7 +11,7 @@ namespace telephone
 {
     public partial class delete : System.Web.UI.Page
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|telephonedirectory.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|result.mdf;Integrated Security=True");
         int id;
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -30,9 +30,9 @@ namespace telephone
 
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "delete from add_contact where id="+id+"";
+            cmd.CommandText = "delete from add_result where id="+id+"";
             cmd.ExecuteNonQuery();
-            Response.Redirect("mycontact.aspx");
+            Response.Redirect("myresult.aspx");
         }
     }
 }

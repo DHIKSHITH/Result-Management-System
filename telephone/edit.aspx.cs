@@ -11,7 +11,7 @@ namespace telephone
 {
     public partial class edit : System.Web.UI.Page
     {
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|telephonedirectory.mdf;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|result.mdf;Integrated Security=True");
         int id;
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -31,7 +31,7 @@ namespace telephone
             if (IsPostBack) return;
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from add_contact where id="+id+"";
+            cmd.CommandText = "select * from add_result where id="+id+"";
             cmd.ExecuteNonQuery();
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -56,10 +56,10 @@ namespace telephone
         {
             SqlCommand cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "update add_contact set firstname='"+firstname.Text+"',usn='"+usn.Text+"',sub1='"+sub1.Text+"',sub2='"+sub2.Text+"',sub3='"+sub3.Text+"',sub4='"+sub4.Text+ "',sub5='" + sub5.Text + "',sub6='" + sub6.Text + "',sub7='" + sub7.Text + "',sub8='" + sub8.Text + "',total='" + total.Text + "',percentage='" + percentage.Text + "'where id=" + id+"";
+            cmd.CommandText = "update add_result set firstname='"+firstname.Text+"',usn='"+usn.Text+"',sub1='"+sub1.Text+"',sub2='"+sub2.Text+"',sub3='"+sub3.Text+"',sub4='"+sub4.Text+ "',sub5='" + sub5.Text + "',sub6='" + sub6.Text + "',sub7='" + sub7.Text + "',sub8='" + sub8.Text + "',total='" + total.Text + "',percentage='" + percentage.Text + "'where id=" + id+"";
             cmd.ExecuteNonQuery();
 
-            Response.Redirect("mycontact.aspx");
+            Response.Redirect("myresult.aspx");
         }
 
         protected void b2_Click(object sender, EventArgs e)
