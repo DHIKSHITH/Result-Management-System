@@ -23,10 +23,10 @@ Choose ASP.NET and Web Development and .NET Core cross-platform development work
 
 ## Screen Shots
 **Registration Page**
-![GitHub Logo](/image/registeration1.png)
+![GitHub Logo](/image/registeration.png)
 
 **Login Page**
-![GitHub Logo](/image/login1.png)
+![GitHub Logo](/image/login.png)
 
 **Dashboard**
 ![GitHub Logo](/image/add-result.png)
