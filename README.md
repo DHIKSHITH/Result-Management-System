@@ -22,7 +22,7 @@ Choose ASP.NET and Web Development and .NET Core cross-platform development work
 * [sql](https://maven.apache.org/) - Database
 
 ## Screen Shots
-![GitHub Logo](/images/login.png)
+![GitHub Logo](/image/login.png)
 
 ## Contributing
 
